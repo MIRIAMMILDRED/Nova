@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <!-- Main figure of a person -->
+  <circle cx="50" cy="60" r="30" fill="#ffc107" />
+
+  <!-- Speech bubble -->
+  <path d="M30 40h40l-10-20h-20l-10 20z" fill="#ffffff" />
+  <text x="50" y="35" text-anchor="middle" font-family="Arial" font-size="10" fill="#000000">Echo!</text>
+
+  <!-- Echo effect -->
+  <circle cx="50" cy="70" r="35" fill="none" stroke="#ffc107" stroke-width="5" stroke-dasharray="5 5">
+    <animate attributeName="r" values="30; 35; 30" dur="2s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="1; 0" dur="2s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="50" cy="70" r="25" fill="none" stroke="#ffc107" stroke-width="5" stroke-dasharray="5 5">
+    <animate attributeName="r" values="20; 25; 20" dur="2s" repeatCount="indefinite" begin="1s" />
+    <animate attributeName="opacity" values="1; 0" dur="2s" repeatCount="indefinite" begin="1s" />
+  </circle>
+  <circle cx="50" cy="70" r="15" fill="none" stroke="#ffc107" stroke-width="5" stroke-dasharray="5 5">
+    <animate attributeName="r" values="10; 15; 10" dur="2s" repeatCount="indefinite" begin="2s" />
+    <animate attributeName="opacity" values="1; 0" dur="2s" repeatCount="indefinite" begin="2s" />
+  </circle>
+</svg>

@@ -1,0 +1,37 @@
+# Node.js dependencies
+/node_modules
+
+# Build files
+/build
+/dist
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Editor directories and files
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
+
+# Windows specific files
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Compiled files
+*.js
+*.jsx
+*.json
+*.html
+
+# Cache and local storage directories
+.cache/
+.local/
