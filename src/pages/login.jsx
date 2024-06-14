@@ -4,7 +4,7 @@ import * as Yup from "yup";
 import { Button, Box, Text } from "@chakra-ui/react";
 import { FcGoogle } from "react-icons/fc";
 import { Link, useNavigate } from "react-router-dom";
-import { GoogleLogin } from 'react-google-login';
+import { GoogleLogin } from '@react-oauth/google"';
 import axios from 'axios';
 
 const Login = () => {
