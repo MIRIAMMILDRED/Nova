@@ -99,7 +99,7 @@ const Login = () => {
 
             <Text textAlign="center" my="4">OR</Text>
 
-            <GoogleOAuthProvider clientId="YOUR_GOOGLE_CLIENT_ID">
+            <GoogleOAuthProvider clientId="82292926425-baeffrenmlc6bepg8dg83vb0o754fq1a.apps.googleusercontent.com">
       <GoogleLogin
         onSuccess={handleGoogleSuccess}
         onError={handleGoogleFailure}

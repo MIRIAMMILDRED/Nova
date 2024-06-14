@@ -88,7 +88,7 @@ const SignUp = ({ nextStep, handleChange, formData }) => {
 
           <h2 className="text-center my-4">OR</h2>
 
-          <GoogleOAuthProvider clientId="YOUR_GOOGLE_CLIENT_ID">
+          <GoogleOAuthProvider clientId="82292926425-baeffrenmlc6bepg8dg83vb0o754fq1a.apps.googleusercontent.com">
       <GoogleLogin
         onSuccess={handleGoogleSuccess}
         onError={handleGoogleFailure}
