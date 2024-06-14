@@ -4,7 +4,7 @@ import * as Yup from "yup";
 import { Button } from "@chakra-ui/react";
 import { FcGoogle } from "react-icons/fc";
 import { Link, useNavigate } from "react-router-dom";
-import { GoogleLogin } from 'react-google-login';
+import { GoogleLogin } from '@react-oauth/google"';
 import PropTypes from 'prop-types';
 
 const SignUp = ({ nextStep, handleChange, formData }) => {
