@@ -4,7 +4,8 @@ import * as Yup from "yup";
 import { Button, Box, Text } from "@chakra-ui/react";
 import { FcGoogle } from "react-icons/fc";
 import { Link, useNavigate } from "react-router-dom";
-import { GoogleLogin } from '@react-oauth/google"';
+import { GoogleOAuthProvider, GoogleLogin } from '@react-oauth/google';
+
 import axios from 'axios';
 
 const Login = () => {
@@ -98,24 +99,26 @@ const Login = () => {
 
             <Text textAlign="center" my="4">OR</Text>
 
-            <GoogleLogin
-              clientId="82292926425-baeffrenmlc6bepg8dg83vb0o754fq1a.apps.googleusercontent.com"
-              onSuccess={handleGoogleSuccess}
-              onFailure={handleGoogleFailure}
-              render={(renderProps) => (
-                <Button
-                  onClick={renderProps.onClick}
-                  disabled={renderProps.disabled}
-                  leftIcon={<FcGoogle />}
-                  colorScheme="blue"
-                  variant="outline"
-                  size="lg"
-                  className="w-full"
-                >
-                  Sign in with Google
-                </Button>
-              )}
-            />
+            <GoogleOAuthProvider clientId="YOUR_GOOGLE_CLIENT_ID">
+      <GoogleLogin
+        onSuccess={handleGoogleSuccess}
+        onError={handleGoogleFailure}
+        render={(renderProps) => (
+          <Button
+            onClick={renderProps.onClick}
+            disabled={renderProps.disabled}
+            leftIcon={<FcGoogle />}
+            colorScheme="blue"
+            variant="outline"
+            size="lg"
+            className="w-full"
+          >
+            Sign in with Google
+          </Button>
+        )}
+      />
+    </GoogleOAuthProvider>
+
 
             <Text textAlign="center" mt="4">
               Don't have an account?{" "}
