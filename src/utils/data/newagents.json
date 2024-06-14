@@ -1,0 +1,52 @@
+{
+  "agents": [
+    {
+      "name": "Kathryn Murphy",
+      "email": "kathrynmurphy@gmail.com",
+      "role": "Support",
+      "id": "00123",
+      "status": "ONLINE",
+      "src": "./public/images/kathryn-pic.png"   
+    },
+    {
+      "name": "Wade Warren",
+      "email": "wadewarren@gmail.com",
+      "role": "Support",
+      "id": "00123",
+      "status": "OFFLINE",
+      "src": "./public/images/wade-pic.png"
+    },
+    {
+      "name": "Leslie Alexander",
+      "email": "kathrynmurphy@gmail.com",
+      "role": "Support",
+      "id": "16794",
+      "status": "ONLINE",
+      "src": "./public/images/leslie-pic.png"
+    },
+    {
+      "name": "Cody Fisher",
+      "email": "codyfisher@gmail.com",
+      "role": "Support",
+      "id": "78521",
+      "status": "OFFLINE",
+      "src": "./public/images/cody-pic.png"
+    },
+    {
+      "name": "Floyd Miles",
+      "email": "flooydmiles@gmail.com",
+      "role": "Support",
+      "id": "15679",
+      "status": "ONLINE",
+      "src": "./public/images/floyd-pic.png"
+    },
+    {
+      "name": "Arlene McCoy",
+      "email": "kathrynmurphy@gmail.com",
+      "role": "Support",
+      "id": "78950",
+      "status": "OFFLINE",
+      "src": "./public/images/arlene-pic.png"
+    }
+  ]
+}

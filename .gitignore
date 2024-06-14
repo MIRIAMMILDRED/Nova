@@ -27,10 +27,10 @@ lerna-debug.log*
 *.sln
 
 # Compiled files
-*.js
-*.jsx
-*.json
-*.html
+# *.js
+# *.jsx
+# # *.json
+# *.html
 
 # Cache and local storage directories
 .cache/

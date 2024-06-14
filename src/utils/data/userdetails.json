@@ -1,0 +1,103 @@
+{
+  "users": [
+    {
+      "name": "Jacob Jones",
+      "id": "#GSW123",
+      "subject": "Payment Failure",
+      "type": "Support",
+      "status": "Open",
+      "agent": "Kathryn Murphy",
+      "src": "./public/images/kathryn-pic.png"
+    },
+    {
+      "name": "Devon Lane",
+      "id": "#WDG345",
+      "subject": "Payment Inquiry",
+      "type": "Support",
+      "status": "Closed",
+      "agent": "Precious Ken",
+      "src": "./public/images/precious-pic.png"
+    },
+    {
+      "name": "Robert Fox",
+      "id": "#GSW364",
+      "subject": "Payment Failure",
+      "type": "Support",
+      "status": "Open",
+      "agent": "Kathryn Murphy",
+      "src": "./public/images/kathryn-pic.png"
+    },
+    {
+      "name": "Brooklyn Simmons",
+      "id": "#GSW123",
+      "subject": "Payment Failure",
+      "type": "Support",
+      "status": "Open",
+      "agent": "None",
+      "src": "./public/images/profile-pic.png"
+    },
+    {
+      "name": "Esther Howard",
+      "id": "#WDG859",
+      "subject": "Payment Inquiry",
+      "type": "Support",
+      "status": "Open",
+      "agent": "Kathryn Murphy",
+      "src": "./public/images/kathryn-pic.png"
+    },
+    {
+        "name": "Guy Hawkins",
+        "id": "#NDY768",
+        "subject": "Payment Inquiry",
+        "type": "Support",
+        "status": "On hold",
+        "agent": "Precious Ken",
+        "src": "./public/images/precious-pic.png"
+      },
+      {
+        "name": "Ralph Edwards",
+        "id": "#JDX976",
+        "subject": "Payment Inquiry",
+        "type": "Support",
+        "status": "Resolved",
+        "agent": "Precious Ken",
+        "src": "./public/images/precious-pic.png"
+      },
+      {
+        "name": "Albert Flores",
+        "id": "#JRD749",
+        "subject": "Payment Inquiry",
+        "type": "Support",
+        "status": "Open",
+        "agent": "None",
+        "src": "./public/images/profile-pic.png"
+      },
+      {
+        "name": "Annette Black",
+        "id": "#KDG820",
+        "subject": "Payment Inquiry",
+        "type": "Support",
+        "status": "Resolved",
+        "agent": "Precious Ken",
+        "src": "./public/images/precious-pic.png"
+      },
+      {
+        "name": "Theresa Webb",
+        "id": "#JRD967",
+        "subject": "Payment Inquiry",
+        "type": "Support",
+        "status": "Open",
+        "agent": "None",
+        "src": "./public/images/profile-pic.png"
+      },
+      {
+        "name": "Eleanor Pena",
+        "id": "#RTD458",
+        "subject": "Payment Inquiry",
+        "type": "Support",
+        "status": "Open",
+        "agent": "None",
+        "src": "./public/images/profile-pic.png"
+      }
+  ]
+}
