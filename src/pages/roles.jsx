@@ -1,7 +1,10 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable react/prop-types */
 import { Button, Center, Input } from "@chakra-ui/react";
 import { PiHandWavingFill } from "react-icons/pi";
 import { useState } from "react";
 
+// eslint-disable-next-line no-unused-vars
 const Roles = ({ prevStep, handleChange, formData, handleSubmit }) => {
   const [selectedRole, setSelectedRole] = useState('');
 

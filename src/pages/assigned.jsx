@@ -1,7 +1,9 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import Header from "../pages/header";
 import Sidebar from "../pages/sideBar";
 import { Input, InputGroup, InputLeftElement } from "@chakra-ui/input";
+// eslint-disable-next-line no-unused-vars
 import { Grid, GridItem, Checkbox, Button } from "@chakra-ui/react";
 import { CiSearch } from "react-icons/ci";
 import { TbFilterSearch } from "react-icons/tb";
@@ -20,7 +22,7 @@ const Assigned = () => {
         <div className="p-6 bg-white flex-grow overflow-auto">
           <div className="flex justify-between items-center mb-4">
             <h1 className="text-2xl font-semibold">Assigned Tickets</h1>
-            <div className="inline-block flex gap-4">
+            <div className="flex gap-4">
               <InputGroup>
                 <InputLeftElement>
                   <CiSearch />

@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";

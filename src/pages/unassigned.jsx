@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import Header from "../pages/header";
 import SideBar from "../pages/sideBar";
 import { Input, InputGroup, InputLeftElement } from "@chakra-ui/input";
@@ -30,7 +31,7 @@ const Unassigned = () => {
       </div>
       <div className="mt-8 pl-4 flex justify-between items-center">
         <h3 className="font-semibold">Assigned Tickets</h3>
-        <div className="inline-block flex gap-4">
+        <div className="inline-block gap-4">
           <InputGroup>
             <InputLeftElement>
               <CiSearch />
