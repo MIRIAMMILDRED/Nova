@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import { FiBell, FiSettings, FiUser } from 'react-icons/fi';
 
