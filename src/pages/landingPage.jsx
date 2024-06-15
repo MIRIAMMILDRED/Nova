@@ -7,7 +7,7 @@ import './landingpage.css';
 const Header = () => (
   <header className="flex justify-between items-center w-full p-5 bg-white shadow-md">
     <div className="text-2xl font-bold text-blue-600">
-      <img src="./public/images/logo.png" alt="logo" className="h-8" />
+      <img src="./images/LOGO.png" alt="logo" className="h-8" />
     </div>
     <nav>
       <ul className="flex space-x-6">

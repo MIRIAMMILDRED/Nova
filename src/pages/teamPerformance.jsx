@@ -20,7 +20,7 @@ const TeamPerformance = () => {
       role: "Organization",
       status: "ONLINE",
       performance: "60%",
-      src: "./public/images/john-image.png",
+      src: "/images/john-image.png",
     },
     {
       name: "Richard Gran",
@@ -29,7 +29,7 @@ const TeamPerformance = () => {
       role: "Executive",
       status: "ONLINE",
       performance: "0%",
-      src: "./public/images/gran-image.png",
+      src: "/images/gran-image.png",
     },
     {
       name: "Laurent Perrier",
@@ -38,7 +38,7 @@ const TeamPerformance = () => {
       role: "Organization",
       status: "OFFLINE",
       performance: "100%",
-      src: "./public/images/laurent-image.png",
+      src: "/images/laurent-image.png",
     },
     {
       name: "Michael Levi",
@@ -47,7 +47,7 @@ const TeamPerformance = () => {
       role: "Organization",
       status: "ONLINE",
       performance: "80%",
-      src: "./public/images/levi-image.png",
+      src: "/images/levi-image.png",
     },
     {
       name: "Richard Gran",
@@ -56,7 +56,7 @@ const TeamPerformance = () => {
       role: "Organization",
       status: "OFFLINE",
       performance: "60%",
-      src: "./public/images/gran-image.png",
+      src: "/images/gran-image.png",
     },
   ];
 

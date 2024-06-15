@@ -25,7 +25,7 @@ const Login = () => {
   return (
     <div className="flex flex-col md:flex-row gap-12 p-4 md:p-12">
       <img
-        src="./public/images/login-bg.png"
+        src="/images/login-bg.png"
         className="hidden md:block h-screen w-2/5"
         alt="Login Background"
       />

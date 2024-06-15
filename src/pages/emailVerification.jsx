@@ -56,7 +56,7 @@ const EmailVerification = ({ prevStep, handleChange, formData, handleSubmit }) =
   return (
     <div className="flex flex-col md:flex-row gap-12 p-4 md:p-12">
       <img
-        src="./public/images/signup bg.png"
+        src="/images/signup bg.png"
         className="hidden md:block h-screen w-2/5 object-cover"
         alt="Signup Background"
       />
@@ -79,7 +79,7 @@ const EmailVerification = ({ prevStep, handleChange, formData, handleSubmit }) =
               A 4-digit confirmation code has been sent to your email. It will expire in 20 minutes. Please enter the code correctly.
             </Text>
             <Center>
-              <img src="./public/images/postal letter.png" className="m-12" alt="Postal Letter" />
+              <img src="/images/postal letter.png" className="m-12" alt="Postal Letter" />
             </Center>
           </div>
 

@@ -59,7 +59,7 @@ const Assigned = () => {
                     <td className="py-3 px-6 border-b">{user.id}</td>
                     <td className="py-3 px-6 border-b">{user.subject}</td>
                     <td className="py-3 px-6 border-b flex items-center gap-4">
-                      <img src="./public/images/Ellipse-icon.png" alt="" />
+                      <img src="/images/Ellipse-icon.png" alt="" />
                       {user.type}
                     </td>
                     <td className="py-3 px-6 border-b">

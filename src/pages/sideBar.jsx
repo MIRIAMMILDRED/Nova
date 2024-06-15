@@ -12,7 +12,7 @@ const Sidebar = () => {
   return (
     <div className="w-full md:w-64 bg-blue-50 text-blue-900 flex flex-col font-sans min-h-screen shadow-lg">
       <div className="flex items-center justify-center h-16 shadow-md">
-        <img src="./public/images/logo.png" alt="logo" className="h-10" />
+        <img src="/images/LOGO.png" alt="logo" className="h-10" />
       </div>
       <div className="flex-grow flex flex-col px-4">
         <div className="py-4 text-center">

@@ -28,7 +28,7 @@ const SignUp = ({ nextStep, handleChange, formData }) => {
   return (
     <div className="flex flex-col md:flex-row gap-12 p-4 md:p-12">
       <img
-        src="./public/images/signup bg.png"
+        src="/images/signup bg.png"
         className="hidden md:block h-screen w-2/5"
         alt="Sign Up Background"
       />
