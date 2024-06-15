@@ -12,13 +12,9 @@ import userDetails from "../utils/data/userdetails.json";
 const Assigned = () => {
   return (
     <div className="flex h-screen bg-blue-50">
-      <div className="w-1/5">
-        <Sidebar />
-      </div>
+      <Sidebar className="w-1/5" />
       <div className="flex-grow flex flex-col">
-        <div className="w-full">
-          <Header />
-        </div>
+        <Header className="w-full" />
         <div className="p-6 bg-white flex-grow overflow-auto">
           <div className="flex justify-between items-center mb-4">
             <h1 className="text-2xl font-semibold">Assigned Tickets</h1>
