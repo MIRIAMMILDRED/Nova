@@ -88,7 +88,7 @@ const HeroSection = () => {
         </div>
         <div className="image-content relative w-1/2">
           <img
-            src="./public/images/landing-one.png"
+            src="/images/landing-one.png"
             alt="Customer Support Graphic"
             className="w-full h-auto"
           />
