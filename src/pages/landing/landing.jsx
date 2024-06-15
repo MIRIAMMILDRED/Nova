@@ -150,7 +150,7 @@ const FeaturesSection = () => {
         <div className="image-content w-1/2 pr-8 flex justify-center">
           <img
             ref={imageRef}
-            src="./public/images/landing-two.png"
+            src="/images/landing-two.png"
             alt="Feature Graphic"
             className="max-w-xs rounded transition-transform duration-500"
           />
