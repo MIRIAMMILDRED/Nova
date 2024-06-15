@@ -1,4 +1,7 @@
-name: Build and deploy Vite app to Azure Web App - appnova
+# Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
+# More GitHub Actions for Azure: https://github.com/Azure/actions
+
+name: Build and deploy Node.js app to Azure Web App - appnova
 
 on:
   push:
@@ -18,19 +21,20 @@ jobs:
         with:
           node-version: '20.x'
 
-      - name: Install dependencies and build
+      - name: npm install, build, and test
         run: |
           npm install
-          npm run build
+          npm run build --if-present
+          npm run test --if-present
 
-      - name: List build directory
-        run: ls -al dist
+      - name: Zip artifact for deployment
+        run: zip release.zip ./* -r
 
-      - name: Upload build artifacts
+      - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
         with:
-          name: build-artifact
-          path: dist/
+          name: node-app
+          path: release.zip
 
   deploy:
     runs-on: ubuntu-latest
@@ -39,36 +43,29 @@ jobs:
       name: 'Production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
     permissions:
-      id-token: write # This is required for requesting the JWT
+      id-token: write #This is required for requesting the JWT
 
     steps:
       - name: Download artifact from build job
         uses: actions/download-artifact@v3
         with:
-          name: build-artifact
-          path: build-artifact
+          name: node-app
 
-      - name: List downloaded artifact directory
-        run: ls -al build-artifact
-
+      - name: Unzip artifact for deployment
+        run: unzip release.zip
+      
       - name: Login to Azure
         uses: azure/login@v1
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_9D5BDE54287A40529435591ECD70AB1D }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_6CB175A5F4184E3C87A85749861F4B38 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_0AA75AEBAF6745B4AA7D131D76391A32 }}
-
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_5822F0C23FAE404CBCC42066E389206D }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_021C5ADDDEC845EEB5A9979F9A399617 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_98B895817D5A4AD8B1AEB9D1B792811F }}
 
       - name: 'Deploy to Azure Web App'
-        # id: deploy-to-webapp
+        id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'appnova'
-         package:build-artifact
-
-      - name: Deploy to Azure Web App
-        uses: azure/webapps-deploy@v2
-        with:
-          app-name: 'appnova'
-          package: build-artifact
-
+          slot-name: 'Production'
+          package: .
+          
