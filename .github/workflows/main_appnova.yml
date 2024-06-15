@@ -58,22 +58,9 @@ jobs:
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_6CB175A5F4184E3C87A85749861F4B38 }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_0AA75AEBAF6745B4AA7D131D76391A32 }}
 
-<<<<<<< HEAD
-      - name: 'Deploy to Azure Web App'
-        # id: deploy-to-webapp
-        uses: azure/webapps-deploy@v2
-        with:
-          app-name: 'appnova'
-         package:build-artifact
-<<<<<<< HEAD
-          package: ./
-=======
-          package: .
->>>>>>> 7458b3e1df30f0edfba643de1fd64e829da584d8
-=======
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'appnova'
           package: build-artifact
->>>>>>> 785ebe8c767a3fc5fbe82831bce7a3c6558bbe86
+
