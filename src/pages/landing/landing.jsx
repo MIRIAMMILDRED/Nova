@@ -308,7 +308,7 @@ const Landing = () => {
     <div className="landing-page">
       <header className="flex justify-between items-center w-full p-5 bg-white shadow-md">
         <div className="text-2xl font-bold text-blue-600">
-          <img src="./public/images/logo.png" alt="logo" className="h-9" />
+          <img src="/images/LOGO.png" alt="logo" className="h-9" />
         </div>
         <nav className="flex items-center space-x-6">
           <a
@@ -445,7 +445,7 @@ const Landing = () => {
           <Card width={{base:"100%", md:"20%"}} rounded="xl">
             <CardHeader display="flex" justifyContent="center" gap="4">
               <img
-                src=".\public\images\pricing-starter-icon.png"
+                src="./images/pricing-starter-icon.png"
                 alt="starter"
               />
               <p className="text-[#3A404B] font-semibold text-3xl">Starter</p>
@@ -499,7 +499,7 @@ const Landing = () => {
           <Card width={{base:"100%", md:"20%"}} rounded="xl">
             <CardHeader display="flex" justifyContent="center" gap="4">
               <img
-                src=".\public\images\pricing-professional-icon.png"
+                src="/images/pricing-professional-icon.png"
                 alt="professional"
               />
               <p className="text-[#3A404B] font-semibold text-3xl">
@@ -556,7 +556,7 @@ const Landing = () => {
           <Card width={{base:"100%", md:"20%"}} rounded="xl">
             <CardHeader display="flex" justifyContent="center" gap="4">
               <img
-                src=".\public\images\pricing-standard-icon.png"
+                src="/images/pricing-standard-icon.png"
                 alt="standard"
               />
               <p className="text-[#3A404B] font-semibold text-3xl">Standard</p>
@@ -615,7 +615,7 @@ const Landing = () => {
           <Card width={{base:"100%", md:"20%"}} rounded="xl">
             <CardHeader display="flex" justifyContent="center" gap="4">
               <img
-                src=".\public\images\pricing-enterprise.png"
+                src="/images/pricing-enterprise.png"
                 alt="enterprise"
               />
               <p className="text-[#3A404B] font-semibold text-3xl">
@@ -792,16 +792,16 @@ const Landing = () => {
         <div className=" flex flex-col md:flex-row gap-4 justify-around p-10 items-start">
           {/* ONE */}
           <div className="w-1/5 flex flex-col items-start gap-4 pt-6">
-            <img src=".\public\images\footer-logo.png" alt="footer logo" />
+            <img src="/images/footer-logo.png" alt="footer logo" />
             <p>
               Experience seamless and efficient issue resolution with our
               advanced ticketing system
             </p>
             <div className="flex gap-4">
-              <img src=".\public\images\logo-twitter.png" alt="twitter" />
-              <img src=".\public\images\logo-facebook.png" alt="facebook" />
-              <img src=".\public\images\logo-instagram.png" alt="instagram" />
-              <img src=".\public\images\logo-linkedin.png" alt="linkedin" />
+              <img src="/images/logo-twitter.png" alt="twitter" />
+              <img src="/images/logo-facebook.png" alt="facebook" />
+              <img src="/images/logo-instagram.png" alt="instagram" />
+              <img src="/images/logo-linkedin.png" alt="linkedin" />
             </div>
           </div>
 
