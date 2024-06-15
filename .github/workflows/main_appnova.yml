@@ -23,6 +23,9 @@ jobs:
           npm install
           npm run build
 
+      - name: List build directory
+        run: ls -al dist
+
       - name: Upload build artifacts
         uses: actions/upload-artifact@v3
         with:
@@ -43,6 +46,10 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: build-artifact
+          path: build-artifact
+
+      - name: List downloaded artifact directory
+        run: ls -al build-artifact
 
       - name: Login to Azure
         uses: azure/login@v1
@@ -57,4 +64,4 @@ jobs:
         with:
           app-name: 'appnova'
           slot-name: 'Production'
-          package: dist/
+          package: build-artifact
