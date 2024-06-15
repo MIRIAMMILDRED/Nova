@@ -22,7 +22,7 @@ const Team = () => {
 
     const fetchTeamMembers = () => {
         setLoading(true);
-        axios.get('http://localhost:8000/api/team/query')
+        axios.get('https://novaend.azurewebsites.net/api/team/query')
             .then(response => {
                 setTeamMembers(response.data);
                 setLoading(false);
@@ -44,7 +44,7 @@ const Team = () => {
         e.preventDefault();
         try {
             setLoading(true);
-            const response = await axios.post('http://localhost:8000/api/team/add', formData);
+            const response = await axios.post('https://novaend.azurewebsites.net/api/team/add', formData);
             setTeamMembers([...teamMembers, response.data]);
             setFormData({ name: '', email: '', role: '', companyId: '' });
             setLoading(false);

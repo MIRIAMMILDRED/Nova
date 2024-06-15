@@ -37,7 +37,7 @@ const Login = () => {
         })}
         onSubmit={async (values, { setSubmitting, setFieldError }) => {
           try {
-            const response = await axios.post('http://localhost:8000/api/auth/login', values);
+            const response = await axios.post('https://novaend.azurewebsites.net/api/auth/login', values);
             console.log('Login successful:', response.data);
             // Store the token (if needed) and navigate to the dashboard
             localStorage.setItem('token', response.data.token);
