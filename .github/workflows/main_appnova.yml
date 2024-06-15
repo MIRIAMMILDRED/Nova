@@ -65,7 +65,12 @@ jobs:
         with:
           app-name: 'appnova'
          package:build-artifact
-
+<<<<<<< HEAD
+          package: ./
+=======
+          package: .
+>>>>>>> 7458b3e1df30f0edfba643de1fd64e829da584d8
+=======
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v2
         with:
