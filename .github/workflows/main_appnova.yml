@@ -61,5 +61,5 @@ jobs:
         with:
           app-name: 'appnova'
           slot-name: 'Production'
-          package: dist/
+          package:dist/
           
