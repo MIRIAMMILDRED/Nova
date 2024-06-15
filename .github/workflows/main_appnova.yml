@@ -21,9 +21,9 @@ jobs:
         with:
           node-version: '20.x'
 
-      - name: npm install, build, and test
+      - name: Install dependencies, build, and test
         run: |
-          npm install
+          npm Install
           npm run build
           npm  run test
 
