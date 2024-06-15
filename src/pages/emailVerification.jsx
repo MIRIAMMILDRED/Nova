@@ -21,7 +21,7 @@ const EmailVerification = ({ prevStep, handleChange, formData, handleSubmit }) =
 
   const handleResendOTP = async () => {
     try {
-      const response = await fetch('http://localhost:8000/api/otp/resend', {
+      const response = await fetch('https://novaend.azurewebsites.net/api/otp/resend', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

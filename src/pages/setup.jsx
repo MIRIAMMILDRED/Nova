@@ -39,7 +39,7 @@ const SetUp = ({ nextStep, prevStep, handleChange, formData }) => {
           console.log("Submitting form with values:", values);
 
           try {
-            const response = await fetch('http://localhost:8000/api/otp/send', {
+            const response = await fetch('https://novaend.azurewebsites.net/api/otp/send', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',

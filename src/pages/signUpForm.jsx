@@ -51,7 +51,7 @@ const SignupForm = () => {
     try {
       setFormData((v)  =>{
        const newValues=v
-         fetch('http://localhost:8000/api/otp/verify', {
+         fetch('https://novaend.azurewebsites.net/api/otp/verify', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
