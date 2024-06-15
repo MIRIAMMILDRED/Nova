@@ -46,6 +46,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: build-artifact
+          path: build-artifact
 
       - name: List downloaded artifact directory
         run: ls -al build-artifact
@@ -63,4 +64,4 @@ jobs:
         with:
           app-name: 'appnova'
           slot-name: 'Production'
-          package: build-artifact/
+          package: build-artifact
