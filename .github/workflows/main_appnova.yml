@@ -51,9 +51,6 @@ jobs:
       - name: List downloaded artifact directory
         run: ls -al build-artifact
 
-      - name: List downloaded artifact directory
-        run: ls -al build-artifact
-
       - name: Login to Azure
         uses: azure/login@v1
         with:
@@ -67,4 +64,4 @@ jobs:
         with:
           app-name: 'appnova'
           slot-name: 'Production'
-          package: dist/
+          package: build-artifact
