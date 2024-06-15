@@ -11,7 +11,7 @@ import userDetails from "../utils/data/userdetails.json";
 
 const Assigned = () => {
   return (
-    <div className="flex h-screen bg-gradient-to-r from-blue-500 via-green-500 to-purple-500">
+    <div className="flex h-screen bg-blue-50">
       <div className="w-1/5">
         <Sidebar />
       </div>
