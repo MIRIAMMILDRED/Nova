@@ -59,9 +59,13 @@ jobs:
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_0AA75AEBAF6745B4AA7D131D76391A32 }}
 
       - name: 'Deploy to Azure Web App'
-        id: deploy-to-webapp
+        # id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'appnova'
-          slot-name: 'Production'
-          package: build-artifact/
+         package:build-artifact
+<<<<<<< HEAD
+          package: ./
+=======
+          package: .
+>>>>>>> 7458b3e1df30f0edfba643de1fd64e829da584d8
