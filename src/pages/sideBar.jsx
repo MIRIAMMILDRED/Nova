@@ -67,7 +67,7 @@ const handleLogout = () => {
               <a href="/unassigned" className={`${itemClass} py-1`}>
                 <FiAlertCircle className={iconClass} /> <span>Unassigned</span> <span className="ml-auto text-sm">10</span>
               </a>
-              <a href="#" className={`${itemClass} py-1`}>
+              <a href="/discussion" className={`${itemClass} py-1`}>
                 <FiMessageSquare className={iconClass} /> <span>Discussion</span> <span className="ml-auto text-sm">8</span>
               </a>
               <a href="#" className={`${itemClass} py-1`}>

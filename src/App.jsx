@@ -15,6 +15,7 @@ import Uassigned from './pages/unassigned';
 import Assigned from './pages/assigned';
 import TeamPerformance from './pages/teamPerformance'
 import Overview from './pages/overview'
+import Discussion from './pages/discussion'
 
 
 
@@ -35,6 +36,7 @@ function App() {
         <Route path='/unassigned' element={<Uassigned />} /> 
         <Route path='/teamPerformance' element={<TeamPerformance />} /> 
         <Route path='/overview' element={<Overview />} /> 
+        <Route path='/discussion' element={<Discussion />} /> 
         
       </Routes>
     </BrowserRouter>
