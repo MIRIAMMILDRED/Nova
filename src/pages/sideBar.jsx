@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
+// src/components/Sidebar.jsx
 import React, { useState } from 'react';
-import { FiHome, FiClipboard, FiSettings, FiUsers, FiBarChart, FiMessageSquare, FiCheckCircle, FiAlertCircle, FiPieChart, FiTrendingUp, FiStar } from 'react-icons/fi';
+import { FiHome, FiClipboard, FiSettings, FiUsers, FiBarChart, FiMessageSquare, FiCheckCircle, FiAlertCircle, FiPieChart, FiTrendingUp, FiStar, FiLogOut } from 'react-icons/fi';
 
 const Sidebar = () => {
   const [isTicketsOpen, setIsTicketsOpen] = useState(false);
@@ -16,6 +17,29 @@ const Sidebar = () => {
     if (isTicketsOpen) setIsTicketsOpen(false);
   };
 
+ 
+const handleLogout = () => {
+  fetch('http://localhost:8000/logout', { 
+    method: 'POST',
+    credentials: 'same-origin',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({}),
+  })
+    .then(response => {
+      if (response.ok) {
+        
+        window.location.href = '/'; 
+      } else {
+        throw new Error('Logout failed');
+      }
+    })
+    .catch(error => {
+      console.error('Error logging out:', error);
+     
+    });
+};
   const iconClass = "mr-4 text-xl"; 
   const itemClass = "flex items-center py-3 px-4 hover:bg-blue-200 rounded-lg";
 
@@ -61,17 +85,20 @@ const Sidebar = () => {
           </button>
           {isAnalyticsOpen && (
             <div className="ml-8">
+              <a href="/teamPerformance" className={`${itemClass} py-1`}>
+                <FiTrendingUp className={iconClass} /> <span>Team Performance</span>
+              </a>
               <a href="/overview" className={`${itemClass} py-1`}>
                 <FiPieChart className={iconClass} /> <span>Overview</span>
-              </a>
-              <a href="/team-performance" className={`${itemClass} py-1`}>
-                <FiTrendingUp className={iconClass} /> <span>Team Performance</span>
               </a>
             </div>
           )}
         </div>
         <a href="#" className={itemClass}>
           <FiSettings className={iconClass} /> <span>Settings</span>
+        </a>
+        <a href="#" className={itemClass} onClick={handleLogout}>
+          <FiLogOut className={iconClass} /> <span>Logout</span>
         </a>
       </div>
       <div className="mt-auto py-4 px-4">

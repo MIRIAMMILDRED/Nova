@@ -13,6 +13,8 @@ import Team from './pages/team';
 import SubmitTickets from './components/submitTickets'; 
 import Uassigned from './pages/unassigned'; 
 import Assigned from './pages/assigned';
+import TeamPerformance from './pages/teamPerformance'
+import Overview from './pages/overview'
 
 
 
@@ -23,7 +25,7 @@ function App() {
     <BrowserRouter>
       <Routes>
       <Route path="/" element={<Landing />} /> 
-        <Route path='/signup' element={<SignUpForm />} /> {/* Corrected component name */}
+        <Route path='/signup' element={<SignUpForm />} /> 
         <Route path='/login' element={<Login />} />
         <Route path='/emailverification' element={<EmailVerification />} />
         <Route path="/assigned" element={<Assigned />} /> 
@@ -31,6 +33,8 @@ function App() {
         <Route path='/submitTickets' element={<SubmitTickets />} />
         <Route path='/dashboard' element={<Layout />} /> 
         <Route path='/unassigned' element={<Uassigned />} /> 
+        <Route path='/teamPerformance' element={<TeamPerformance />} /> 
+        <Route path='/overview' element={<Overview />} /> 
         
       </Routes>
     </BrowserRouter>

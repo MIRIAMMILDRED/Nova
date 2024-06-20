@@ -45,7 +45,7 @@ const LineGraph = () => {
             if(!context.chart.chartArea){
                 return;
             }
-            const { ctx, data, chartArea:{top, bottom}} = context.chart
+            const { ctx,  chartArea:{top, bottom}} = context.chart
 
             const bgGradient = ctx.createLinearGradient(0, top, 0, bottom)
 
