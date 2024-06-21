@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useRef } from "react";
 import "./landing.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -79,10 +81,10 @@ const HeroSection = () => {
           </p>
           <div className="cta-buttons flex justify-center md:justify-start space-x-4">
             <button className="bg-blue-600 text-white px-6 py-3 rounded transition hover:bg-blue-700">
-              Sign Up for Free
+            <a href="./signup"> Sign up for free</a>
             </button>
             <button className="bg-white text-blue-600 border border-blue-600 px-6 py-3 rounded transition hover:bg-gray-100">
-              Request Demo
+            <a href="./demo"> Request Demo</a>
             </button>
           </div>
         </div>
@@ -177,10 +179,10 @@ const FeaturesSection = () => {
           </p>
           <div className="cta-buttons flex justify-center space-x-4">
             <button className="bg-blue-600 text-white px-6 py-3 rounded transition hover:bg-blue-700">
-              Sign Up for Free
+            <a href="./signup"> Sign up for free</a>
             </button>
             <button className="bg-white text-blue-600 border border-blue-600 px-6 py-3 rounded transition hover:bg-gray-100">
-              Request Demo
+            <a href="./demo"> Request Demo</a>
             </button>
           </div>
         </div>
@@ -394,10 +396,10 @@ const Landing = () => {
 
         <div className="flex flex-col md:flex-row gap-10">
           <Button textColor="#0056B3" leftIcon={<PiSparkle />}>
-            Sign up for free
+          <a href="./signup"> Sign up for free</a>
           </Button>
           <Button variant="outline" textColor="white">
-            Request Demo
+          <a href="./demo"> Request Demo</a>
           </Button>
         </div>
       </section>
@@ -490,7 +492,7 @@ const Landing = () => {
             </CardBody>
             <CardFooter>
               <Button colorScheme="blue" w="100%">
-                Start Free Trial
+              <a href="./signup"> Start Free Trial</a>
               </Button>
             </CardFooter>
           </Card>
@@ -546,7 +548,7 @@ const Landing = () => {
             </CardBody>
             <CardFooter>
               <Button colorScheme="blue" w="100%">
-                Start Free Trial
+              <a href="./signup"> Start Free Trial</a>
               </Button>
             </CardFooter>
           </Card>
@@ -605,7 +607,7 @@ const Landing = () => {
             </CardBody>
             <CardFooter>
               <Button colorScheme="blue" w="100%">
-                Request Demo
+              <a href="./demo"> Request Demo</a>
               </Button>
             </CardFooter>
           </Card>
@@ -663,7 +665,7 @@ const Landing = () => {
             </CardBody>
             <CardFooter>
               <Button colorScheme="blue" w="100%">
-                Request Demo
+                <a href="./demo"> Request Demo</a>
               </Button>
             </CardFooter>
           </Card>
@@ -776,14 +778,14 @@ const Landing = () => {
             backgroundColor="#007BFF"
             leftIcon={<PiSparkle />}
           >
-            Sign up for free
+             <a href="./signup"> Sign up for free</a>
           </Button>
           <Button
             border="1px #007bff solid"
             variant="outline"
             textColor="#007BFF"
           >
-            Request Demo
+           <a href="./demo"> Request Demo</a>
           </Button>
         </div>
       </section>

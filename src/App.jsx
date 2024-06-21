@@ -16,7 +16,7 @@ import Assigned from './pages/assigned';
 import TeamPerformance from './pages/teamPerformance'
 import Overview from './pages/overview'
 import Discussion from './pages/discussion'
-
+import Demo from './pages/demo'
 
 
 
@@ -38,6 +38,7 @@ function App() {
         <Route path='/teamPerformance' element={<TeamPerformance />} /> 
         <Route path='/overview' element={<Overview />} /> 
         <Route path='/discussion' element={<Discussion />} /> 
+        <Route path='/demo' element={<Demo />} /> 
         
       </Routes>
     </BrowserRouter>
