@@ -19,7 +19,7 @@ const Sidebar = () => {
 
  
 const handleLogout = () => {
-  fetch('http://localhost:8000/logout', { 
+  fetch('https://novaend.azurewebsites.net/api/logout', { 
     method: 'POST',
     credentials: 'same-origin',
     headers: {
