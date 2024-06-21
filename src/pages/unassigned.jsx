@@ -74,7 +74,7 @@ const Unassigned = () => {
   );
 
   return (
-    <div className="flex h-screen bg-white">
+    <div className="flex  bg-white">
       <SideBar />
       <div className="flex-grow flex flex-col">
         <Header />
@@ -169,7 +169,7 @@ const Unassigned = () => {
                   alignItems="center"
                   gap="4"
                 >
-                  <img src="/images/Ellipse-icon.png" alt="type icon" />
+                  <img src="images/Ellipse-icon.png" alt="type icon" />
                   {user.type}
                 </GridItem>
                 <GridItem
