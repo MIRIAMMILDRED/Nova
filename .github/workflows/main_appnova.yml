@@ -59,13 +59,13 @@ jobs:
         with:
           client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_5822F0C23FAE404CBCC42066E389206D }}
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_021C5ADDDEC845EEB5A9979F9A399617 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_98B895817D5A4AD8B1AEB9D1B792811F }}
+          subscription-id: ${{ secrets.NOVASUPPORT }}
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'appnova'
+          app-name: 'novasupport'
           slot-name: 'Production'
           package: .
           
