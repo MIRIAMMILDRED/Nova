@@ -11,7 +11,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
       - uses: actions/checkout@v4
@@ -31,7 +31,7 @@ jobs:
         run: zip release.zip ./* -r
 
       - name: Upload artifact for deployment job
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: node-app
           path: release.zip
@@ -56,6 +56,7 @@ jobs:
       
       - name: Login to Azure
         uses: azure/login@v1
+        with:
           client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_0F766FD8D7944659BCE3F69F613EA83A }}
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_0EC76E2C62C045E6B022A05BCDD85367 }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_B39A1C1686C34F73BA2A0DE63DEC69B0 }}
